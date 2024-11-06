@@ -22,11 +22,14 @@ const randomDelay = (min, max) => {
 
 const displayWelcome = () => {
     console.log(`
-                ===============================
-                =     DAWN VALIDATOR BOT      =
-                =   Created by Nofan Rambe    =
-                = https://github.com/Rambeboy =
-                ===============================
+const width = process.stdout.columns; // Mendapatkan lebar terminal
+const centerText = (text) => text.padStart((width + text.length) / 2).padEnd(width);
+
+console.log(centerText("======================================"));
+console.log(centerText("=         DAWN VALIDATOR BOT         ="));
+console.log(centerText("=     Created by Nofan Rambe         ="));
+console.log(centerText("= https://github.com/Rambeboy ="));
+console.log(centerText("======================================"));
     
     
     `);
