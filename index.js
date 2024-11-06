@@ -22,11 +22,13 @@ const randomDelay = (min, max) => {
 
 const displayWelcome = () => {
     console.log(`
-===============================
-=     DAWN VALIDATOR BOT      =
-=   Created by Nofan Rambe    =
-= https://github.com/Rambeboy =
-===============================
+                ===============================
+                =     DAWN VALIDATOR BOT      =
+                =   Created by Nofan Rambe    =
+                = https://github.com/Rambeboy =
+                ===============================
+    
+    
     `);
 };
 
