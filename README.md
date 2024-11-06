@@ -1,6 +1,6 @@
 # DAWN VALIDATOR
 
-## What needed
+## What Needed
 
 - Node JS
 
@@ -15,7 +15,7 @@
 
 ---
 
-## Installing and setup
+## Installing and Setup
 
 ---
 
@@ -38,7 +38,7 @@
 
 ---
 
-### Setup and run
+### Setup and Run
 
 1. Login/register Dawn Validator account and login, get the token in "getpoint?appid=" -> "authorization:" at network tab in inspect element in browser. 
 2. In `Dawn-Validator-bot` directory, Edit and adjust this line in `accounts.js` and save it
