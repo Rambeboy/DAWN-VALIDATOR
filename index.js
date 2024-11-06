@@ -21,17 +21,18 @@ const randomDelay = (min, max) => {
 };
 
 const displayWelcome = () => {
-    const width = process.stdout.columns || 80;
+    const width = process.stdout.columns;
     const centerText = (text) => {
         const padding = Math.floor((width - text.length) / 2);
         return ' '.repeat(padding) + text;
     };
+	
+    console.log(centerText("==============================="));
+    console.log(centerText("=       DAWN VALIDATOR        ="));
+    console.log(centerText("=   Created by Nofan Rambe    ="));
+    console.log(centerText("= https://github.com/Rambeboy ="));
+    console.log(centerText("==============================="));
 
-    console.log(centerText("======================================"));
-    console.log(centerText("=         DAWN VALIDATOR BOT         ="));
-    console.log(centerText("=       Created by Nofan Rambe       ="));
-    console.log(centerText("=     https://github.com/Rambeboy    ="));
-    console.log(centerText("======================================"));
 };
 
 displayWelcome();
