@@ -21,7 +21,7 @@ const randomDelay = (min, max) => {
 };
 
 const displayWelcome = () => {
-    console.log(`
+
 const width = process.stdout.columns; // Mendapatkan lebar terminal
 const centerText = (text) => text.padStart((width + text.length) / 2).padEnd(width);
 
@@ -31,8 +31,6 @@ console.log(centerText("=     Created by Nofan Rambe         ="));
 console.log(centerText("= https://github.com/Rambeboy ="));
 console.log(centerText("======================================"));
     
-    
-    `);
 };
 
 const fetchPoints = async (headers) => {
