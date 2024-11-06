@@ -21,17 +21,20 @@ const randomDelay = (min, max) => {
 };
 
 const displayWelcome = () => {
+    const width = process.stdout.columns || 80;
+    const centerText = (text) => {
+        const padding = Math.floor((width - text.length) / 2);
+        return ' '.repeat(padding) + text;
+    };
 
-const width = process.stdout.columns; // Mendapatkan lebar terminal
-const centerText = (text) => text.padStart((width + text.length) / 2).padEnd(width);
-
-console.log(centerText("======================================"));
-console.log(centerText("=         DAWN VALIDATOR BOT         ="));
-console.log(centerText("=     Created by Nofan Rambe         ="));
-console.log(centerText("= https://github.com/Rambeboy ="));
-console.log(centerText("======================================"));
-    
+    console.log(centerText("======================================"));
+    console.log(centerText("=         DAWN VALIDATOR BOT         ="));
+    console.log(centerText("=       Created by Nofan Rambe       ="));
+    console.log(centerText("=     https://github.com/Rambeboy    ="));
+    console.log(centerText("======================================"));
 };
+
+displayWelcome();
 
 const fetchPoints = async (headers) => {
     try {
