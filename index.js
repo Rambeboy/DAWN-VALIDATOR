@@ -21,23 +21,34 @@ const randomDelay = (min, max) => {
 };
 
 const displayWelcome = () => {
+const chalk = require('chalk');
+
+const displayBanner = () => {
     const width = process.stdout.columns;
+    const height = process.stdout.rows;
+
+
     const centerText = (text) => {
         const padding = Math.floor((width - text.length) / 2);
         return ' '.repeat(padding) + text;
     };
-	
-    console.log(centerText("==============================="));
-    console.log(centerText("=       DAWN VALIDATOR        ="));
-    console.log(centerText("=   Created by Nofan Rambe    ="));
-    console.log(centerText("= https://github.com/Rambeboy ="));
-    console.log(centerText("==============================="));
 
+
+    const verticalPadding = Math.floor((height - 7) / 2);
+
+
+    console.log('\n'.repeat(verticalPadding));
+    console.log(chalk.blue.bold(centerText("========================================")));
+    console.log(chalk.greenBright.bold(centerText("DAWN VALIDATOR BOT")));
+    console.log(chalk.blue.bold(centerText("========================================")));
+    console.log(chalk.white(centerText("Created by Nofan Rambe")));
+    console.log(chalk.gray(centerText("https://github.com/Rambeboy")));
+    console.log(chalk.blue.bold(centerText("========================================")));
 };
 
-displayWelcome();
+displayBanner();
 
-const fetchPoints = async (headers) => {
+	const fetchPoints = async (headers) => {
     try {
         const response = await axios.get(apiEndpoints.getPoints, { headers, httpsAgent: ignoreSslAgent });
         if (response.status === 200 && response.data.status) {
