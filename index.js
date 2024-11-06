@@ -22,9 +22,11 @@ const randomDelay = (min, max) => {
 
 const displayWelcome = () => {
     console.log(`
- -----------------------------------------------
-|🌟 DAWN Validator Extension automatic claim 🌟|
- -----------------------------------------------
+===============================
+=     DAWN VALIDATOR BOT      =
+=   Created by Nofan Rambe    =
+= https://github.com/Rambeboy =
+===============================
     `);
 };
 
