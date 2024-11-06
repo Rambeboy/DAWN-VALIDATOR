@@ -1,7 +1,10 @@
-# DAWN Validator Extension automatic claim
+# DAWN VALIDATOR
 
 ## What needed
+
 - Node JS
+
+---
 
 ## Features
 
@@ -10,16 +13,19 @@
 - Auto loop.
 - Proxy support.
 
+---
 
 ## Installing and setup
+
+---
 
 ### Install
 1. Clone the project and go to project directory
    ```
-   git clone https://github.com/recitativonika/Dawn-Validator-bot.git
+   git clone https://github.com/Rambeboy/DAWN-VALIDATOR.git
    ```
    ```
-   cd Dawn-Validator-bot
+   cd DAWN-VALIDATOR
    ```
 2. Install required package
    ```
@@ -29,6 +35,9 @@
    ```
    npm i
    ```
+
+---
+
 ### Setup and run
 
 1. Login/register Dawn Validator account and login, get the token in "getpoint?appid=" -> "authorization:" at network tab in inspect element in browser. 
@@ -58,8 +67,6 @@
     node index.js
     ```
 	
-Python version if you have problem with js version: https://github.com/recitativonika/Dawn-Validator-bot-python	
-	
-Dawn Validator Extension : https://chromewebstore.google.com/detail/dawn-validator-chrome-ext/fpdkjdnhkakefebpekbdhillbhonfjjp?authuser=0&hl=en
+Dawn Validator Extension : [DOWNLOAD](https://chromewebstore.google.com/detail/dawn-validator-chrome-ext/fpdkjdnhkakefebpekbdhillbhonfjjp?authuser=0&hl=en)
 
-My reff code if you want :) : 9lv10g33
+---
