@@ -20,33 +20,26 @@ const randomDelay = (min, max) => {
     });
 };
 
-const displayWelcome = () => {
-const chalk = require('chalk');
 
-const displayBanner = () => {
-    const width = process.stdout.columns;
-    const height = process.stdout.rows;
+async def main():
+    os.system("cls" if os.name == "nt" else "clear")
+    print(
+        f"""
+
+███╗   ██╗ ██████╗ ███████╗ █████╗ ███╗   ██╗    ██████╗  █████╗ ███╗   ███╗██████╗ ███████╗
+████╗  ██║██╔═══██╗██╔════╝██╔══██╗████╗  ██║    ██╔══██╗██╔══██╗████╗ ████║██╔══██╗██╔════╝
+██╔██╗ ██║██║   ██║█████╗  ███████║██╔██╗ ██║    ██████╔╝███████║██╔████╔██║██████╔╝█████╗  
+██║╚██╗██║██║   ██║██╔══╝  ██╔══██║██║╚██╗██║    ██╔══██╗██╔══██║██║╚██╔╝██║██╔══██╗██╔══╝  
+██║ ╚████║╚██████╔╝██║     ██║  ██║██║ ╚████║    ██║  ██║██║  ██║██║ ╚═╝ ██║██████╔╝███████╗
+╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚══════╝
+                                                                                            
+	    
+     {green}Github: {blue}github.com/Rambeboy
+          """
+    )                                        
 
 
-    const centerText = (text) => {
-        const padding = Math.floor((width - text.length) / 2);
-        return ' '.repeat(padding) + text;
-    };
-
-
-    const verticalPadding = Math.floor((height - 7) / 2);
-
-
-    console.log('\n'.repeat(verticalPadding));
-    console.log(chalk.blue.bold(centerText("========================================")));
-    console.log(chalk.greenBright.bold(centerText("DAWN VALIDATOR BOT")));
-    console.log(chalk.blue.bold(centerText("========================================")));
-    console.log(chalk.white(centerText("Created by Nofan Rambe")));
-    console.log(chalk.gray(centerText("https://github.com/Rambeboy")));
-    console.log(chalk.blue.bold(centerText("========================================")));
-};
-
-displayBanner();
+    
 
 	const fetchPoints = async (headers) => {
     try {
