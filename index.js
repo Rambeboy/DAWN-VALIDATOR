@@ -20,12 +20,9 @@ const randomDelay = (min, max) => {
     });
 };
 
-
-async def main():
-    os.system("cls" if os.name == "nt" else "clear")
-    print(
-        f"""
-
+function printLogo(){
+    console.log(`
+    
 ███╗   ██╗ ██████╗ ███████╗ █████╗ ███╗   ██╗    ██████╗  █████╗ ███╗   ███╗██████╗ ███████╗
 ████╗  ██║██╔═══██╗██╔════╝██╔══██╗████╗  ██║    ██╔══██╗██╔══██╗████╗ ████║██╔══██╗██╔════╝
 ██╔██╗ ██║██║   ██║█████╗  ███████║██╔██╗ ██║    ██████╔╝███████║██╔████╔██║██████╔╝█████╗  
@@ -33,10 +30,12 @@ async def main():
 ██║ ╚████║╚██████╔╝██║     ██║  ██║██║ ╚████║    ██║  ██║██║  ██║██║ ╚═╝ ██║██████╔╝███████╗
 ╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚══════╝
                                                                                             
-	    
-     {green}Github: {blue}github.com/Rambeboy
-          """
-    )                                        
+ 
+            `.cyan);
+    console.log('[+] Welcome & Enjoy Sir!'.green);
+    console.log('[+] Author: Nofan Rambe'.blue);
+}
+module.exports = printLogo;
 
 
     
